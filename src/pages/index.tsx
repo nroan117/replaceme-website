@@ -5,6 +5,7 @@ import Hero from '@site/src/components/Hero';
 import TrustBar from '@site/src/components/TrustBar';
 import Approach from '@site/src/components/Approach';
 import ProductTabs from '@site/src/components/ProductTabs';
+import HomepageBottom from '@site/src/components/HomepageBottom';
 
 export default function Home(): ReactNode {
   const { siteConfig } = useDocusaurusContext();
@@ -17,6 +18,7 @@ export default function Home(): ReactNode {
       <TrustBar />
       <Approach />
       <ProductTabs />
+      <HomepageBottom />
     </Layout>
   );
 }
