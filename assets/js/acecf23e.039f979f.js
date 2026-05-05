@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkreplaceme_website=self.webpackChunkreplaceme_website||[]).push([["3220"],{1912(e){e.exports=JSON.parse('{"blogBasePath":"/replaceme-website/blog","blogTitle":"Blog","authorsListPath":"/replaceme-website/blog/authors"}')}}]);
