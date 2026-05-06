@@ -1,5 +1,6 @@
+/* Approach — 3-step Connect/Scan/Fix section */
 .approach {
-  background: #0f172a;
+  background: #ffffff;
   padding: 6rem 1.5rem;
 }
 
@@ -19,7 +20,7 @@
   font-weight: 700;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: #2563eb;
+  color: #f97316;
   margin: 0 0 1rem;
 }
 
@@ -27,17 +28,15 @@
   font-size: clamp(1.875rem, 3.5vw, 2.75rem);
   font-weight: 800;
   line-height: 1.15;
-  color: #ffffff;
+  color: #111827;
   margin: 0 0 1.25rem;
 }
 
 .subhead {
   font-size: 1.0625rem;
-  color: #64748b;
-  margin: 0;
+  color: #6b7280;
+  margin: 0 auto;
   max-width: 560px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 /* Steps Grid */
@@ -56,27 +55,28 @@
 
 /* Card */
 .card {
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.07);
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
   border-radius: 1rem;
   padding: 2rem;
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
-  transition: border-color 0.2s, background 0.2s;
+  transition: border-color 0.2s, background 0.2s, box-shadow 0.2s;
 }
 
 .card:hover {
-  border-color: rgba(37, 99, 235, 0.3);
-  background: rgba(37, 99, 235, 0.04);
+  border-color: #fed7aa;
+  background: #fff7ed;
+  box-shadow: 0 4px 20px rgba(249, 115, 22, 0.08);
 }
 
 .cardNumber {
   font-size: 3.5rem;
   font-weight: 900;
   line-height: 1;
-  color: #2563eb;
-  opacity: 0.8;
+  color: #f97316;
+  opacity: 0.7;
   font-family: system-ui, sans-serif;
 }
 
@@ -95,20 +95,20 @@
 .cardName {
   font-size: 1.375rem;
   font-weight: 700;
-  color: #ffffff;
+  color: #111827;
 }
 
 .cardSubheadline {
   font-size: 0.875rem;
   font-weight: 600;
-  color: #2563eb;
+  color: #f97316;
   text-transform: uppercase;
   letter-spacing: 0.06em;
 }
 
 .cardBody {
   font-size: 0.9375rem;
-  color: #94a3b8;
+  color: #6b7280;
   line-height: 1.6;
   margin: 0;
 }
@@ -127,12 +127,12 @@
   align-items: flex-start;
   gap: 0.625rem;
   font-size: 0.875rem;
-  color: #cbd5e1;
+  color: #374151;
   line-height: 1.5;
 }
 
 .bulletIcon {
-  color: #2563eb;
+  color: #f97316;
   font-size: 0.75rem;
   margin-top: 0.2rem;
   flex-shrink: 0;

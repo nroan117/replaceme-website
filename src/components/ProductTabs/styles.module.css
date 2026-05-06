@@ -1,5 +1,6 @@
+/* ProductTabs — tabbed feature section with code examples */
 .section {
-  background: #020617;
+  background: #f9fafb;
   padding: 6rem 1.5rem;
 }
 
@@ -19,14 +20,14 @@
   font-weight: 700;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: #2563eb;
+  color: #f97316;
   margin: 0 0 1rem;
 }
 
 .headline {
   font-size: clamp(1.75rem, 3vw, 2.5rem);
   font-weight: 800;
-  color: #ffffff;
+  color: #111827;
   margin: 0;
   line-height: 1.2;
 }
@@ -35,7 +36,7 @@
 .tabBar {
   display: flex;
   gap: 0.375rem;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid #e5e7eb;
   margin-bottom: 2.5rem;
   flex-wrap: wrap;
 }
@@ -44,7 +45,7 @@
   padding: 0.625rem 1.25rem;
   font-size: 0.9375rem;
   font-weight: 500;
-  color: #64748b;
+  color: #9ca3af;
   background: transparent;
   border: none;
   border-bottom: 2px solid transparent;
@@ -55,12 +56,12 @@
 }
 
 .tab:hover {
-  color: #cbd5e1;
+  color: #374151;
 }
 
 .tabActive {
-  color: #2563eb !important;
-  border-bottom-color: #2563eb;
+  color: #f97316 !important;
+  border-bottom-color: #f97316;
 }
 
 /* Tab Content */
@@ -88,7 +89,7 @@
 .tabEyebrow {
   font-size: 0.8125rem;
   font-weight: 600;
-  color: #2563eb;
+  color: #f97316;
   letter-spacing: 0.04em;
   margin: 0;
 }
@@ -96,7 +97,7 @@
 .tabDescription {
   font-size: 1.25rem;
   font-weight: 600;
-  color: #e2e8f0;
+  color: #111827;
   line-height: 1.4;
   margin: 0;
 }
@@ -115,29 +116,29 @@
   align-items: center;
   gap: 0.75rem;
   font-size: 0.9375rem;
-  color: #94a3b8;
+  color: #6b7280;
 }
 
 .bulletIcon {
-  color: #2563eb;
+  color: #f97316;
   font-weight: 700;
   font-size: 0.75rem;
   flex-shrink: 0;
 }
 
-/* Right Panel — Code Block */
+/* Right Panel — Code Block (keep dark terminal) */
 .tabRight {
   display: flex;
   justify-content: center;
 }
 
 .codeBlock {
-  background: #020617;
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: #0f1117;
+  border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 0.75rem;
   overflow: hidden;
   width: 100%;
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.12);
 }
 
 .codeHeader {
@@ -156,6 +157,10 @@
   display: block;
 }
 
+.dotRed    { background: #ef4444; }
+.dotYellow { background: #f59e0b; }
+.dotGreen  { background: #22c55e; }
+
 .code {
   font-family: 'Courier New', Courier, monospace;
   font-size: 0.8125rem;
@@ -166,7 +171,3 @@
   overflow: auto;
   white-space: pre;
 }
-
-.dotRed { background: #ef4444; }
-.dotYellow { background: #f59e0b; }
-.dotGreen { background: #22c55e; }

@@ -1,5 +1,6 @@
+/* Stats — social proof strip with bold metric cards */
 .section {
-  background-color: #0f172a;
+  background: #fff7ed;
   padding: 80px 24px;
 }
 
@@ -17,7 +18,7 @@
   font-size: 0.75rem;
   font-weight: 700;
   letter-spacing: 0.12em;
-  color: #2563eb;
+  color: #f97316;
   text-transform: uppercase;
   margin-bottom: 16px;
 }
@@ -25,14 +26,14 @@
 .headline {
   font-size: 2.25rem;
   font-weight: 700;
-  color: #ffffff;
+  color: #111827;
   margin-bottom: 16px;
   line-height: 1.2;
 }
 
 .subtitle {
   font-size: 1.125rem;
-  color: #94a3b8;
+  color: #6b7280;
   max-width: 560px;
   margin: 0 auto;
 }
@@ -47,30 +48,30 @@
   .statsGrid {
     grid-template-columns: 1fr;
   }
-
   .headline {
     font-size: 1.75rem;
   }
 }
 
 .statCard {
-  background-color: #1e293b;
-  border: 1px solid #334155;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
   border-radius: 12px;
   padding: 40px 32px;
   text-align: center;
-  transition: border-color 0.2s ease, transform 0.2s ease;
+  transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
 }
 
 .statCard:hover {
-  border-color: #2563eb;
+  border-color: #fed7aa;
   transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(249, 115, 22, 0.1);
 }
 
 .statNumber {
   font-size: 3rem;
   font-weight: 800;
-  color: #2563eb;
+  color: #f97316;
   line-height: 1;
   margin-bottom: 12px;
 }
@@ -78,12 +79,12 @@
 .statLabel {
   font-size: 1.125rem;
   font-weight: 700;
-  color: #ffffff;
+  color: #111827;
   margin-bottom: 12px;
 }
 
 .statDescription {
   font-size: 0.9rem;
-  color: #94a3b8;
+  color: #6b7280;
   line-height: 1.6;
 }
