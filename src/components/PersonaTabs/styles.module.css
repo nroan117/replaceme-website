@@ -1,5 +1,6 @@
+/* PersonaTabs — audience targeting section */
 .section {
-  background-color: #020617;
+  background: #ffffff;
   padding: 80px 24px;
 }
 
@@ -17,7 +18,7 @@
   font-size: 0.75rem;
   font-weight: 700;
   letter-spacing: 0.12em;
-  color: #2563eb;
+  color: #f97316;
   text-transform: uppercase;
   margin-bottom: 16px;
 }
@@ -25,14 +26,14 @@
 .headline {
   font-size: 2.25rem;
   font-weight: 700;
-  color: #ffffff;
+  color: #111827;
   margin-bottom: 16px;
   line-height: 1.2;
 }
 
 .subtitle {
   font-size: 1.125rem;
-  color: #94a3b8;
+  color: #6b7280;
   max-width: 640px;
   margin: 0 auto;
 }
@@ -48,9 +49,9 @@
 .tabButton {
   padding: 10px 24px;
   border-radius: 999px;
-  border: 1px solid #334155;
+  border: 1px solid #e5e7eb;
   background: transparent;
-  color: #94a3b8;
+  color: #6b7280;
   font-size: 0.95rem;
   font-weight: 500;
   cursor: pointer;
@@ -58,20 +59,20 @@
 }
 
 .tabButton:hover {
-  border-color: #2563eb;
-  color: #ffffff;
+  border-color: #f97316;
+  color: #f97316;
 }
 
 .tabButtonActive {
-  background-color: #2563eb;
-  border-color: #2563eb;
+  background: #f97316;
+  border-color: #f97316;
   color: #ffffff;
   font-weight: 600;
 }
 
 .tabContent {
-  background-color: #0f172a;
-  border: 1px solid #1e293b;
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
   border-radius: 16px;
   padding: 48px;
   animation: fadeIn 0.2s ease;
@@ -79,14 +80,14 @@
 
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(8px); }
-  to { opacity: 1; transform: translateY(0); }
+  to   { opacity: 1; transform: translateY(0); }
 }
 
 .personaBadge {
   display: inline-block;
-  background-color: rgba(37, 99, 235, 0.15);
-  border: 1px solid rgba(37, 99, 235, 0.4);
-  color: #60a5fa;
+  background: #fff7ed;
+  border: 1px solid #fed7aa;
+  color: #ea580c;
   font-size: 0.8rem;
   font-weight: 600;
   letter-spacing: 0.05em;
@@ -98,7 +99,7 @@
 
 .personaDescription {
   font-size: 1.1rem;
-  color: #cbd5e1;
+  color: #374151;
   line-height: 1.7;
   margin-bottom: 32px;
 }
@@ -110,7 +111,7 @@
 .whatYouGetTitle {
   font-size: 1rem;
   font-weight: 700;
-  color: #ffffff;
+  color: #111827;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   margin-bottom: 16px;
@@ -129,13 +130,13 @@
   display: flex;
   align-items: flex-start;
   gap: 12px;
-  color: #e2e8f0;
+  color: #374151;
   font-size: 1rem;
   line-height: 1.5;
 }
 
 .bulletIcon {
-  color: #2563eb;
+  color: #f97316;
   font-weight: 700;
   flex-shrink: 0;
   margin-top: 1px;
@@ -147,38 +148,26 @@
 
 .ctaButton {
   display: inline-block;
-  background-color: #2563eb;
+  background: #f97316;
   color: #ffffff;
   font-size: 1rem;
   font-weight: 600;
   padding: 14px 32px;
   border-radius: 8px;
   text-decoration: none;
-  transition: background-color 0.2s ease, transform 0.2s ease;
+  transition: background 0.2s, transform 0.2s;
 }
 
 .ctaButton:hover {
-  background-color: #1d4ed8;
+  background: #ea580c;
   color: #ffffff;
   text-decoration: none;
   transform: translateY(-1px);
 }
 
 @media (max-width: 768px) {
-  .tabContent {
-    padding: 28px 20px;
-  }
-
-  .headline {
-    font-size: 1.75rem;
-  }
-
-  .tabBar {
-    flex-direction: column;
-    align-items: stretch;
-  }
-
-  .tabButton {
-    text-align: center;
-  }
+  .tabContent { padding: 28px 20px; }
+  .headline   { font-size: 1.75rem; }
+  .tabBar     { flex-direction: column; align-items: stretch; }
+  .tabButton  { text-align: center; }
 }

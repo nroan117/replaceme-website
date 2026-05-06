@@ -1,7 +1,7 @@
+/* CTAStrip — full-width bottom conversion section */
 .section {
-  background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #0f172a 100%);
+  background: linear-gradient(135deg, #ea580c 0%, #f97316 55%, #fb923c 100%);
   padding: 100px 24px;
-  border-top: 1px solid #1e293b;
 }
 
 .container {
@@ -20,7 +20,7 @@
 
 .subtitle {
   font-size: 1.125rem;
-  color: #94a3b8;
+  color: rgba(255, 255, 255, 0.85);
   margin-bottom: 40px;
   line-height: 1.6;
 }
@@ -33,26 +33,27 @@
   margin-bottom: 28px;
 }
 
+/* Inverted button — white bg, orange text */
 .primaryButton {
   display: inline-block;
-  background-color: #2563eb;
-  color: #ffffff;
+  background: #ffffff;
+  color: #ea580c;
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: 700;
   padding: 16px 36px;
   border-radius: 8px;
   text-decoration: none;
-  transition: background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .primaryButton:hover {
-  background-color: #1d4ed8;
-  color: #ffffff;
+  color: #ea580c;
   text-decoration: none;
   transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(37, 99, 235, 0.4);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
 }
 
+/* Ghost button — white border, white text */
 .secondaryButton {
   display: inline-block;
   background: transparent;
@@ -61,13 +62,13 @@
   font-weight: 600;
   padding: 16px 36px;
   border-radius: 8px;
-  border: 1px solid #475569;
+  border: 2px solid rgba(255, 255, 255, 0.6);
   text-decoration: none;
-  transition: border-color 0.2s ease, transform 0.2s ease;
+  transition: border-color 0.2s, transform 0.2s;
 }
 
 .secondaryButton:hover {
-  border-color: #2563eb;
+  border-color: #ffffff;
   color: #ffffff;
   text-decoration: none;
   transform: translateY(-2px);
@@ -75,22 +76,14 @@
 
 .trustLine {
   font-size: 0.9rem;
-  color: #64748b;
+  color: rgba(255, 255, 255, 0.65);
   margin: 0;
 }
 
 @media (max-width: 600px) {
-  .headline {
-    font-size: 1.875rem;
-  }
-
-  .buttons {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .primaryButton,
-  .secondaryButton {
+  .headline { font-size: 1.875rem; }
+  .buttons  { flex-direction: column; align-items: center; }
+  .primaryButton, .secondaryButton {
     width: 100%;
     max-width: 320px;
     text-align: center;
