@@ -165,9 +165,11 @@
   font-family: 'Courier New', Courier, monospace;
   font-size: 0.8125rem;
   line-height: 1.65;
-  color: #a1efb7;
+  color: #a1efb7 !important;
+  background: #0f1117 !important;
   margin: 0;
   padding: 1.25rem;
   overflow: auto;
   white-space: pre;
+  border: none !important;
 }
