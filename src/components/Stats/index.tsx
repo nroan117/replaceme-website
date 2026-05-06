@@ -1,13 +1,14 @@
-import React from 'react';
+import type { ReactNode } from 'react';
 import styles from './styles.module.css';
 
+/** Props for a single stat metric card. */
 interface StatCardProps {
   number: string;
   label: string;
   description: string;
 }
 
-function StatCard({ number, label, description }: StatCardProps): JSX.Element {
+function StatCard({ number, label, description }: StatCardProps): ReactNode {
   return (
     <div className={styles.statCard}>
       <div className={styles.statNumber}>{number}</div>
@@ -35,7 +36,8 @@ const stats: StatCardProps[] = [
   },
 ];
 
-export default function Stats(): JSX.Element {
+/** Stats — social proof strip with 3 bold metric cards. */
+export default function Stats(): ReactNode {
   return (
     <section className={styles.section}>
       <div className={styles.container}>

@@ -2,6 +2,7 @@ import type { ReactNode } from 'react';
 import Link from '@docusaurus/Link';
 import styles from './styles.module.css';
 
+/** Hero section — main above-the-fold section with headline, subheadline, CTAs, and terminal demo. */
 export default function Hero(): ReactNode {
   return (
     <section className={styles.hero}>
@@ -30,9 +31,9 @@ export default function Hero(): ReactNode {
         <div className={styles.visual}>
           <div className={styles.terminal}>
             <div className={styles.terminalHeader}>
-              <span className={styles.dot} style={{ background: '#ef4444' }} />
-              <span className={styles.dot} style={{ background: '#f59e0b' }} />
-              <span className={styles.dot} style={{ background: '#22c55e' }} />
+              <span className={`${styles.dot} ${styles.dotRed}`} />
+              <span className={`${styles.dot} ${styles.dotYellow}`} />
+              <span className={`${styles.dot} ${styles.dotGreen}`} />
               <span className={styles.terminalTitle}>replaceme scan</span>
             </div>
             <div className={styles.terminalBody}>

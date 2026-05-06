@@ -1,6 +1,8 @@
-import React, { useState } from 'react';
+import type { ReactNode } from 'react';
+import { useState } from 'react';
 import styles from './styles.module.css';
 
+/** Data shape for a single persona targeting tab. */
 interface PersonaTab {
   id: string;
   label: string;
@@ -51,7 +53,8 @@ const tabs: PersonaTab[] = [
   },
 ];
 
-export default function PersonaTabs(): JSX.Element {
+/** PersonaTabs — interactive persona targeting section with tabs for FinOps, Platform, and Developer audiences. */
+export default function PersonaTabs(): ReactNode {
   const [activeTab, setActiveTab] = useState<string>('finops');
 
   const activePersona = tabs.find((t) => t.id === activeTab) ?? tabs[0];

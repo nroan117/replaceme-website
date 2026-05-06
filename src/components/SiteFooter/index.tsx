@@ -1,11 +1,13 @@
-import React from 'react';
+import type { ReactNode } from 'react';
 import styles from './styles.module.css';
 
+/** A single footer navigation link. */
 interface FooterLink {
   label: string;
   href: string;
 }
 
+/** A single footer column with a title and list of links. */
 interface FooterColumn {
   title: string;
   links: FooterLink[];
@@ -50,7 +52,8 @@ const columns: FooterColumn[] = [
   },
 ];
 
-export default function SiteFooter(): JSX.Element {
+/** SiteFooter — 4-column site footer with product links, resources, company info, and copyright. */
+export default function SiteFooter(): ReactNode {
   return (
     <footer className={styles.footer}>
       <div className={styles.container}>

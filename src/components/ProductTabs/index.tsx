@@ -2,6 +2,7 @@ import type { ReactNode } from 'react';
 import { useState } from 'react';
 import styles from './styles.module.css';
 
+/** Data shape for a single product feature tab. */
 interface TabData {
   id: string;
   label: string;
@@ -149,6 +150,7 @@ rules:
   },
 ];
 
+/** ProductTabs — tabbed product feature section with code examples for each capability. */
 export default function ProductTabs(): ReactNode {
   const [activeId, setActiveId] = useState<string>(TABS[0].id);
 
@@ -183,8 +185,8 @@ export default function ProductTabs(): ReactNode {
             <p className={styles.tabEyebrow}>{activeTab.eyebrow}</p>
             <p className={styles.tabDescription}>{activeTab.description}</p>
             <ul className={styles.tabBullets}>
-              {activeTab.bullets.map((bullet, i) => (
-                <li key={i} className={styles.tabBulletItem}>
+              {activeTab.bullets.map((bullet) => (
+                <li key={bullet} className={styles.tabBulletItem}>
                   <span className={styles.bulletIcon} aria-hidden="true">✓</span>
                   {bullet}
                 </li>
@@ -194,9 +196,9 @@ export default function ProductTabs(): ReactNode {
           <div className={styles.tabRight}>
             <div className={styles.codeBlock}>
               <div className={styles.codeHeader}>
-                <span className={styles.dot} style={{ background: '#ef4444' }} />
-                <span className={styles.dot} style={{ background: '#f59e0b' }} />
-                <span className={styles.dot} style={{ background: '#22c55e' }} />
+                <span className={`${styles.dot} ${styles.dotRed}`} />
+                <span className={`${styles.dot} ${styles.dotYellow}`} />
+                <span className={`${styles.dot} ${styles.dotGreen}`} />
               </div>
               <pre className={styles.code}>{activeTab.codeBlock}</pre>
             </div>

@@ -1,6 +1,7 @@
 import type { ReactNode } from 'react';
 import styles from './styles.module.css';
 
+/** Props for a single how-it-works step card. */
 interface Step {
   number: number;
   name: string;
@@ -59,8 +60,8 @@ function ApproachCard({ step }: { step: Step }): ReactNode {
         </div>
         <p className={styles.cardBody}>{step.body}</p>
         <ul className={styles.cardBullets}>
-          {step.bullets.map((bullet, i) => (
-            <li key={i} className={styles.bulletItem}>
+          {step.bullets.map((bullet) => (
+            <li key={bullet} className={styles.bulletItem}>
               <span className={styles.bulletIcon} aria-hidden="true">✓</span>
               {bullet}
             </li>
@@ -71,6 +72,7 @@ function ApproachCard({ step }: { step: Step }): ReactNode {
   );
 }
 
+/** Approach — 3-step numbered cards (Connect → Scan → Fix) explaining the product workflow. */
 export default function Approach(): ReactNode {
   return (
     <section className={styles.approach}>

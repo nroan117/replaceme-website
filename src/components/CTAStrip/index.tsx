@@ -1,7 +1,8 @@
-import React from 'react';
+import type { ReactNode } from 'react';
 import styles from './styles.module.css';
 
-export default function CTAStrip(): JSX.Element {
+/** CTAStrip — full-width bottom call-to-action section with headline and two buttons. */
+export default function CTAStrip(): ReactNode {
   return (
     <section className={styles.section}>
       <div className={styles.container}>

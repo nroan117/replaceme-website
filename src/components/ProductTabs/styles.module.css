@@ -166,3 +166,7 @@
   overflow: auto;
   white-space: pre;
 }
+
+.dotRed { background: #ef4444; }
+.dotYellow { background: #f59e0b; }
+.dotGreen { background: #22c55e; }

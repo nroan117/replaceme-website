@@ -12,6 +12,7 @@ const MARQUEE_ITEMS = [
   'High-growth ML startup',
 ];
 
+/** TrustBar — scrolling marquee of trust signals displayed below the Hero. */
 export default function TrustBar(): ReactNode {
   // Duplicate items for seamless infinite scroll
   const items = [...MARQUEE_ITEMS, ...MARQUEE_ITEMS];
@@ -28,7 +29,7 @@ export default function TrustBar(): ReactNode {
       <div className={styles.marqueeWrapper}>
         <div className={styles.marqueeTrack}>
           {items.map((item, i) => (
-            <span key={i} className={styles.marqueeItem}>
+            <span key={`marquee-${item}-${i}`} className={styles.marqueeItem}>
               {item}
               <span className={styles.separator} aria-hidden="true">·</span>
             </span>
